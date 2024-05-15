@@ -1,17 +1,19 @@
 on:
   pull_request:
 
-steps:
-  - name: Checkout
-    id: checkout
-    uses: actions/checkout@v4
+jobs:
+  test-custom-action:
+    steps:
+      - name: Checkout
+        id: checkout
+        uses: actions/checkout@v4
 
-  - name: Test Local Action
-    id: test-action
-    uses: actions/sb-cute-action@v1
-    with:
-      milliseconds: 1000
+      - name: Test Local Action
+        id: test-action
+        uses: actions/sb-cute-action@v1
+        with:
+          milliseconds: 1000
 
-  - name: Print Output
-    id: output
-    run: echo "${{ steps.test-action.outputs.time }}"
+      - name: Print Output
+        id: output
+        run: echo "${{ steps.test-action.outputs.time }}"

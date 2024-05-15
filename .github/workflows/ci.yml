@@ -12,10 +12,12 @@ jobs:
 
       - name: Test Local Action
         id: test-action
-        uses: simonasbuj/sb-cute-action@v1.0.3
+        uses: simonasbuj/sb-cute-action@v1.0.5
         with:
           milliseconds: 1003
 
       - name: Print Output
         id: output
-        run: echo "${{ steps.test-action.outputs.time }}"
+        run: |
+          echo "${{ steps.test-action.outputs.time }}"
+          echo "${{ steps.test-action.outputs.sb_output }}"

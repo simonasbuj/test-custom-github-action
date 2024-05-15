@@ -14,7 +14,7 @@ jobs:
         id: test-action
         uses: simonasbuj/sb-cute-action@v1
         with:
-          milliseconds: 1001
+          milliseconds: 1002
 
       - name: Print Output
         id: output

@@ -12,9 +12,9 @@ jobs:
 
       - name: Test Local Action
         id: test-action
-        uses: simonasbuj/sb-cute-action@v1.0.5
+        uses: simonasbuj/sb-cute-action@v1.0.4
         with:
-          milliseconds: 1002
+          milliseconds: 1003
 
       - name: Print Output
         id: output

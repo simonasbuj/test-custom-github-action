@@ -12,9 +12,9 @@ jobs:
 
       - name: Test Local Action
         id: test-action
-        uses: simonasbuj/sb-cute-action@v1.0.8
+        uses: simonasbuj/sb-cute-action@v1
         with:
-          milliseconds: 1003
+          milliseconds: 1004
           sb_input: "this can be anything?"
 
       - name: Print Output

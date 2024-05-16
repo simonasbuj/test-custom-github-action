@@ -12,7 +12,7 @@ jobs:
 
       - name: Test Local Action
         id: test-action
-        uses: simonasbuj/sb-cute-action@v1.0.11
+        uses: simonasbuj/sb-cute-action@v1.0.12
         with:
           milliseconds: 1004
           sb_input: "my secret is very big and very bad"
